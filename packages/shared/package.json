@@ -1,0 +1,29 @@
+{
+  "name": "@monorepo/shared",
+  "description": "Shared utilities and helper functions for Monorepo applications and tools",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "fonts",
+    "src"
+  ],
+  "sideEffects": false,
+  "devDependencies": {
+    "history": "^4.10.1"
+  },
+  "peerDependencies": {
+    "@mui/icons-material": "5.x",
+    "@mui/material": "5.x",
+    "@mui/styles": "5.x",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "react-router-dom": "5.x",
+    "typescript": "4.x"
+  }
+}
