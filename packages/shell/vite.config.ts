@@ -1,17 +1,15 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
 import { defaultConfig } from '../../platform/vite-config';
 
 export default defineConfig({
   ...defaultConfig,
-  plugins: [react()],
   // Configuration for building your library.
   // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points.
-      entry: resolve(__dirname, 'src/index.js'),
+      entry: resolve(__dirname, 'src/index.ts'),
       name: 'MonorepoShell',
       fileName: 'index',
       // Change this to the formats you want to support.

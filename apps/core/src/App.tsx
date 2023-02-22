@@ -6,10 +6,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Provider from './provider';
 
 const CoreApp = React.lazy(() => import('./routes'));
-const LoginApp = React.lazy(() => import('@monorepo/login'));
-const PostsApp = React.lazy(() => import('@monorepo/posts'));
 
-function DefaultFallback({ children, fallback }) {
+function DefaultFallback({
+  children,
+  fallback
+}: {
+  children: React.ReactNode;
+  fallback?: React.ReactNode;
+}) {
   return (
     <React.Suspense fallback={fallback || <Dashboard />}>
       {children}
@@ -20,19 +24,6 @@ function DefaultFallback({ children, fallback }) {
 function Apps() {
   return (
     <Switch>
-      {/* Applications */}
-      <Route path="/login">
-        <DefaultFallback>
-          <LoginApp />
-        </DefaultFallback>
-      </Route>
-
-      <Route path="/posts">
-        <DefaultFallback>
-          <PostsApp />
-        </DefaultFallback>
-      </Route>
-
       <Route path="/">
         <DefaultFallback>
           <CoreApp />

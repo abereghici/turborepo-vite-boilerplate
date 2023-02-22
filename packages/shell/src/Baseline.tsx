@@ -1,10 +1,9 @@
-import React from 'react';
 import { CssBaseline } from '@mui/material';
 import { getScrollbarSize } from '@monorepo/shared';
 import { Global, css } from '@emotion/react';
 import { theme } from '@monorepo/shared';
 
-function Baseline() {
+export function Baseline() {
   return (
     <>
       <CssBaseline />
@@ -27,5 +26,3 @@ function Baseline() {
     </>
   );
 }
-
-export default Baseline;

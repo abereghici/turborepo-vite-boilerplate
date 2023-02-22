@@ -1,6 +1,6 @@
 import { waitFor } from '@testing-library/react';
 import { renderWithRouter } from '@monorepo/shared';
-import { Dashboard } from '../layouts';
+import { Dashboard } from './Dashboard';
 
 describe('renders layouts without crashing', () => {
   it('renders Dashboard', async () => {
@@ -8,6 +8,6 @@ describe('renders layouts without crashing', () => {
 
     await waitFor(() => [getByRole('main')]);
 
-    expect(getAllByText(/Dashboard/i)).not.toBeNull();
+    expect(getAllByText(/@monorepo/i)).not.toBeNull();
   });
 });
