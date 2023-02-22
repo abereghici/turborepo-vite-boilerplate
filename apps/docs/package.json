@@ -16,7 +16,6 @@
   "devDependencies": {
     "@storybook/react": "^7.0.0-beta.13",
     "@storybook/react-vite": "^7.0.0-beta.13",
-    "eslint-config-monorepo": "*",
     "storybook": "^7.0.0-beta.13"
   },
   "peerDependencies": {

@@ -1,0 +1,15 @@
+node_modules/
+
+coverage
+
+**/dist
+build/
+.vscode
+.trash
+.DS_Store
+out
+
+storybook-static
+vite.config.js.timestamp-*.mjs
+
+apps/core/stats.*

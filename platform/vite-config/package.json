@@ -1,0 +1,10 @@
+{
+  "name": "@monorepo/vite-config",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "peerDependencies": {
+    "@testing-library/jest-dom": "5.x",
+    "@vitejs/plugin-react-swc": "3.x",
+    "vite": "4.x"
+  }
+}

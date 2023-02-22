@@ -3,7 +3,7 @@
 
   "globalDependencies": [".env.local"],
 
-  "globalEnv": ["CI"],
+  "globalEnv": ["CI", "PUBLIC_URL", "APP_DIR"],
 
   "pipeline": {
     "build": {
@@ -20,6 +20,9 @@
       "outputs": []
     },
     "test:watch": {
+      "cache": false
+    },
+    "test:e2e": {
       "cache": false
     },
     "docs": {

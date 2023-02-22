@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import { defaultConfig } from '../../platform/config/vite';
+import { defaultConfig } from '../../platform/vite-config';
 
 export default defineConfig({
   ...defaultConfig,

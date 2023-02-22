@@ -6,7 +6,8 @@
   "workspaces": [
     "packages/*",
     "platform/*",
-    "apps/*"
+    "apps/*",
+    "e2e/*"
   ],
   "scripts": {
     "build": "turbo run build",
@@ -17,7 +18,8 @@
     "lint-staged": "npm exec lint-staged",
     "prepare": "husky install",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:e2e:core": "turbo run test:e2e --filter=@monorepo/core"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": "eslint --ext .js,.jsx,.ts,.tsx --fix --max-warnings=0",
@@ -34,6 +36,7 @@
     "react-router-dom": "^5.3.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.31.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/node": "^18.14.0",

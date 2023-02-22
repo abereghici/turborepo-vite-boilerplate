@@ -1,0 +1,8 @@
+{
+  "name": "@monorepo/playwright-config",
+  "version": "0.0.0",
+  "main": "config.ts",
+  "peerDependencies": {
+    "@playwright/test": "1.x"
+  }
+}
